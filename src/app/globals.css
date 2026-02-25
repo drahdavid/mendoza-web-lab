@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --brand-black: #050508;
+  --brand-gray: #12121a;
+  --brand-white: #f9fafb;
+  --brand-accent: #8b5cf6;
+  --brand-secondary: #06b6d4;
+}
+
+body {
+  background-color: var(--brand-black);
+  color: var(--brand-white);
+}
