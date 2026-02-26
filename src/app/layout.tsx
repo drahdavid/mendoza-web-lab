@@ -53,6 +53,12 @@ export default function RootLayout({
             </a>
             <div className="hidden md:flex items-center gap-8">
               <a
+                href="#paquetes"
+                className="text-sm font-medium text-brand-white/60 hover:text-brand-white transition-colors"
+              >
+                Paquetes
+              </a>
+              <a
                 href="#soluciones"
                 className="text-sm font-medium text-brand-white/60 hover:text-brand-white transition-colors"
               >
