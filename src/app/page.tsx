@@ -1,3 +1,5 @@
+import { Logo } from "@/components/Logo";
+
 export default function Home() {
   return (
     <div className="relative overflow-hidden">
@@ -8,9 +10,6 @@ export default function Home() {
       {/* Hero */}
       <section className="min-h-[90vh] flex flex-col justify-center relative pt-20 px-6 pb-24">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-brand-accent text-sm font-semibold tracking-[0.3em] uppercase mb-6 font-mono">
-            Mendoza Web Lab
-          </p>
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-brand-white leading-[1.05] tracking-tight mb-8">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-white via-brand-white to-brand-accent/50">
               Desarrollo web moderno
@@ -43,8 +42,8 @@ export default function Home() {
       <section className="py-32 px-6 border-y border-white/5 bg-brand-gray/30 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-medium text-brand-white/90 leading-[1.3] tracking-tight italic">
-            "En un mundo digital saturado, la mediocridad es invisible. Tu
-            negocio merece una presencia que exija atención."
+            &quot;En un mundo digital saturado, la mediocridad es invisible. Tu
+            negocio merece una presencia que exija atención.&quot;
           </h2>
         </div>
       </section>

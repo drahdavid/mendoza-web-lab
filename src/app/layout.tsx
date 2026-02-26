@@ -19,12 +19,9 @@ export default function RootLayout({
     <html lang="es" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="min-h-screen antialiased font-sans bg-brand-black text-brand-white selection:bg-brand-accent/30">
         <header className="fixed top-0 left-0 right-0 z-50 bg-brand-black/80 backdrop-blur-md border-b border-white/5">
-          <nav className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
-            <a href="#" className="flex items-center gap-3 group">
-              <Logo className="h-10 w-auto group-hover:scale-110 transition-transform duration-300" />
-              <span className="font-bold text-brand-white tracking-tighter text-xl">
-                Mendoza<span className="text-brand-accent">WebLab</span>
-              </span>
+          <nav className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
+            <a href="#" className="flex items-center group">
+              <Logo className="h-20 w-56 group-hover:scale-105 transition-transform duration-300" />
             </a>
             <div className="hidden md:flex items-center gap-8">
               <a
