@@ -1,6 +1,4 @@
 import type { Metadata } from "next";
-import { GeistSans } from "geist/font/sans";
-import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Logo } from "@/components/Logo";
 
@@ -16,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+    <html lang="es">
       <body className="min-h-screen antialiased font-sans bg-brand-black text-brand-white selection:bg-brand-accent/30">
         <header className="fixed top-0 left-0 right-0 z-50 bg-brand-black/80 backdrop-blur-md border-b border-white/5">
           <nav className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
@@ -40,6 +38,21 @@ export default function RootLayout({
           </nav>
         </header>
         <main className="pt-0">{children}</main>
+
+        {/* Botón flotante de WhatsApp */}
+        <a
+          href="https://wa.me/5492612005950?text=Hola%20Mendoza%20Web%20Lab%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20web."
+          target="_blank"
+          rel="noreferrer"
+          className="fixed bottom-6 right-6 z-40 inline-flex items-center justify-center gap-2 rounded-full bg-emerald-500 text-white px-5 py-3 shadow-[0_15px_40px_rgba(16,185,129,0.5)] hover:bg-emerald-400 hover:shadow-[0_20px_50px_rgba(16,185,129,0.7)] transition-all duration-300 group"
+        >
+          <span className="hidden md:inline text-sm font-semibold tracking-wide">
+            Chatear por WhatsApp
+          </span>
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-600 group-hover:bg-emerald-500 transition-colors">
+            <span className="h-2 w-2 rounded-full bg-white shadow-[0_0_10px_rgba(255,255,255,0.9)]" />
+          </span>
+        </a>
       </body>
     </html>
   );

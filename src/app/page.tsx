@@ -1,4 +1,12 @@
 import { Logo } from "@/components/Logo";
+import {
+  Crown,
+  Gauge,
+  Search,
+  Smartphone,
+  FlaskConical,
+  LifeBuoy,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -27,6 +35,15 @@ export default function Home() {
               className="px-8 py-4 bg-brand-accent text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] transition-all duration-300 transform hover:-translate-y-1"
             >
               Iniciar un proyecto
+            </a>
+            <a
+              href="https://wa.me/5492612005950?text=Hola%20Mendoza%20Web%20Lab%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20web."
+              target="_blank"
+              rel="noreferrer"
+              className="px-8 py-4 inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/60 bg-emerald-400/10 text-emerald-200 font-semibold hover:bg-emerald-400/20 hover:border-emerald-300 transition-all duration-300 backdrop-blur-sm"
+            >
+              <span>WhatsApp directo</span>
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
             </a>
             <a
               href="#soluciones"
@@ -67,26 +84,32 @@ export default function Home() {
               {
                 title: "Diseño Premium",
                 desc: "Interfaces que respiran exclusividad y refuerzan la autoridad de tu marca.",
+                Icon: Crown,
               },
               {
                 title: "Performance Lab",
                 desc: "Velocidad de carga instantánea optimizada para Core Web Vitals.",
+                Icon: Gauge,
               },
               {
                 title: "Estrategia SEO",
                 desc: "Visibilidad orgánica para que tus clientes ideales te encuentren primero.",
+                Icon: Search,
               },
               {
                 title: "Mobile First",
                 desc: "Experiencias fluidas y adaptativas en cualquier dispositivo.",
+                Icon: Smartphone,
               },
               {
                 title: "Conversión Lab",
                 desc: "Psicología aplicada al diseño para maximizar el retorno de inversión.",
+                Icon: FlaskConical,
               },
               {
                 title: "Soporte Continuo",
                 desc: "Mantenimiento y evolución constante de tu activo digital.",
+                Icon: LifeBuoy,
               },
             ].map((item, i) => (
               <div
@@ -94,7 +117,7 @@ export default function Home() {
                 className="group p-8 rounded-3xl bg-white/[0.02] border border-white/[0.05] hover:border-brand-accent/30 transition-all duration-500 backdrop-blur-sm"
               >
                 <div className="w-12 h-12 rounded-2xl bg-brand-accent/10 flex items-center justify-center mb-6 text-brand-accent group-hover:scale-110 transition-transform">
-                  <span className="text-xl">0{i + 1}</span>
+                  <item.Icon className="w-6 h-6" />
                 </div>
                 <h4 className="text-xl font-bold text-brand-white mb-3">
                   {item.title}
@@ -119,15 +142,26 @@ export default function Home() {
             Hablemos sobre cómo Mendoza Web Lab puede transformar tu presencia
             en la web.
           </p>
-          <a
-            href="mailto:hola@mendozaweblab.com"
-            className="inline-flex items-center gap-3 px-10 py-5 bg-brand-white text-brand-black font-bold rounded-full hover:bg-brand-accent hover:text-white transition-all duration-300 group"
-          >
-            Agendar Consulta Gratuita
-            <span className="group-hover:translate-x-1 transition-transform">
-              →
-            </span>
-          </a>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+            <a
+              href="mailto:hola@mendozaweblab.com"
+              className="inline-flex items-center gap-3 px-10 py-5 bg-brand-white text-brand-black font-bold rounded-full hover:bg-brand-accent hover:text-white transition-all duration-300 group"
+            >
+              <span>Agendar Consulta Gratuita</span>
+              <span className="group-hover:translate-x-1 transition-transform">
+                →
+              </span>
+            </a>
+            <a
+              href="https://wa.me/5492612005950?text=Hola%20Mendoza%20Web%20Lab%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20web."
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-emerald-400/60 bg-emerald-400/10 text-emerald-200 font-semibold hover:bg-emerald-400/20 hover:border-emerald-300 transition-all duration-300 backdrop-blur-sm"
+            >
+              <span>Hablar por WhatsApp</span>
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
+            </a>
+          </div>
         </div>
       </section>
 
