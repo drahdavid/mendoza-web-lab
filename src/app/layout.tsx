@@ -32,6 +32,10 @@ export const metadata: Metadata = {
     description:
       "Desarrollo web moderno para negocios que quieren crecer. Creamos landing pages rápidas, optimizadas y diseñadas para generar más consultas.",
   },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
@@ -41,6 +45,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
+      <head>
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
+      </head>
       <body className="min-h-screen antialiased font-sans bg-brand-black text-brand-white selection:bg-brand-accent/30">
         <header className="fixed top-0 left-0 right-0 z-50 bg-brand-black/80 backdrop-blur-md border-b border-white/5">
           <nav className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
