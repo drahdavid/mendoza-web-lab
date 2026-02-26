@@ -45,7 +45,7 @@ export default function Home() {
             </a>
             <a
               href="#paquetes"
-              className="flex-1 min-w-0 sm:flex-initial inline-flex items-center justify-center px-8 py-4 rounded-full bg-white/5 border border-white/10 text-brand-white font-semibold hover:bg-white/10 transition-all backdrop-blur-sm"
+              className="flex-1 min-w-0 sm:flex-initial inline-flex items-center justify-center px-8 py-4 rounded-full bg-white/5 border border-white/10 text-brand-white font-semibold hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transform hover:-translate-y-0.5 transition-all duration-300 backdrop-blur-sm"
             >
               Ver paquetes
             </a>
@@ -155,7 +155,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
             {/* Pack Start */}
             <article className="relative flex flex-col p-8 rounded-3xl bg-white/[0.03] border border-white/[0.06] hover:border-emerald-300/60 transition-all duration-500 backdrop-blur-sm">
-              <span className="inline-flex items-center rounded-full bg-emerald-500/15 text-emerald-300 text-xs font-semibold px-3 py-1 mb-4 uppercase tracking-wide">
+              <span className="self-start inline-flex items-center rounded-full bg-emerald-500/15 text-emerald-300 text-xs font-semibold px-6 py-2 mb-4 uppercase tracking-wide">
                 Pack presencia Start
               </span>
               <h4 className="text-2xl font-bold text-brand-white mb-2">
@@ -208,7 +208,7 @@ export default function Home() {
             {/* Pack Pro (destacado) */}
             <article className="relative flex flex-col p-8 rounded-3xl bg-brand-accent/10 border border-brand-accent/60 shadow-[0_20px_60px_rgba(139,92,246,0.35)] z-10">
               <div className="flex items-center justify-between mb-4">
-                <span className="inline-flex items-center rounded-full bg-brand-accent text-white text-xs font-semibold px-3 py-1 uppercase tracking-wide">
+                <span className="inline-flex items-center rounded-full bg-brand-accent text-white text-xs font-semibold px-6 py-2 uppercase tracking-wide">
                   Pack presencia Pro
                 </span>
                 <span className="text-[11px] font-semibold text-emerald-200 uppercase tracking-wide">
@@ -257,7 +257,7 @@ export default function Home() {
 
             {/* Pack Marca + Web Profesional */}
             <article className="relative flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/[0.06] hover:border-brand-secondary/60 transition-all duration-500 backdrop-blur-sm">
-              <span className="inline-flex items-center rounded-full bg-brand-secondary/15 text-brand-secondary text-xs font-semibold px-3 py-1 mb-4 uppercase tracking-wide">
+              <span className="self-start inline-flex items-center rounded-full bg-brand-secondary/15 text-brand-secondary text-xs font-semibold px-6 py-2 mb-4 uppercase tracking-wide">
                 Marca + web profesional
               </span>
               <h4 className="text-2xl font-bold text-brand-white mb-2">
@@ -348,7 +348,7 @@ export default function Home() {
             </a>
             <a
               href="#paquetes"
-              className="inline-flex items-center justify-center px-8 py-5 rounded-full bg-white/5 border border-white/10 text-brand-white font-semibold hover:bg-white/10 transition-all backdrop-blur-sm"
+              className="inline-flex items-center justify-center px-8 py-5 rounded-full bg-white/5 border border-white/10 text-brand-white font-semibold hover:bg-white/10 hover:border-white/20 hover:shadow-[0_0_15px_rgba(255,255,255,0.05)] transform hover:-translate-y-0.5 transition-all duration-300 backdrop-blur-sm"
             >
               Ver paquetes
             </a>
