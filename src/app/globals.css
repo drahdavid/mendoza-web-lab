@@ -17,6 +17,10 @@
     Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--brand-black);
   color: var(--brand-white);

@@ -33,27 +33,21 @@ export default function Home() {
             <strong>ingeniería de precisión</strong> para crear experiencias
             digitales que cautivan y convierten.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="#contacto"
-              className="px-8 py-4 bg-brand-accent text-white font-semibold rounded-full hover:shadow-[0_0_20px_rgba(139,92,246,0.3)] transition-all duration-300 transform hover:-translate-y-1"
-            >
-              Iniciar un proyecto
-            </a>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href="https://wa.me/5492612005950?text=Hola%20Mendoza%20Web%20Lab%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20web."
               target="_blank"
               rel="noreferrer"
-              className="px-8 py-4 inline-flex items-center justify-center gap-2 rounded-full border border-emerald-400/60 bg-emerald-400/10 text-emerald-200 font-semibold hover:bg-emerald-400/20 hover:border-emerald-300 transition-all duration-300 backdrop-blur-sm"
+              className="flex-1 min-w-0 sm:flex-initial inline-flex items-center justify-center gap-2 px-10 py-4 rounded-full bg-emerald-500/20 border border-emerald-400/60 text-emerald-200 font-semibold hover:bg-emerald-500/30 hover:border-emerald-300 transition-all duration-300 backdrop-blur-sm hover:shadow-[0_0_20px_rgba(52,211,153,0.2)] transform hover:-translate-y-0.5"
             >
-              <span>WhatsApp directo</span>
-              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
+              <span>Consultar por WhatsApp</span>
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)] shrink-0" />
             </a>
             <a
-              href="#soluciones"
-              className="mt-4 px-8 py-4 bg-white/5 border border-white/10 text-brand-white font-semibold rounded-full hover:bg-white/10 transition-all backdrop-blur-sm"
+              href="#paquetes"
+              className="flex-1 min-w-0 sm:flex-initial inline-flex items-center justify-center px-8 py-4 rounded-full bg-white/5 border border-white/10 text-brand-white font-semibold hover:bg-white/10 transition-all backdrop-blur-sm"
             >
-              Nuestra metodología
+              Ver paquetes
             </a>
           </div>
         </div>
@@ -344,22 +338,19 @@ export default function Home() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="mailto:hola@mendozaweblab.com"
-              className="inline-flex items-center gap-3 px-10 py-5 bg-brand-white text-brand-black font-bold rounded-full hover:bg-brand-accent hover:text-white transition-all duration-300 group"
-            >
-              <span>Agendar Consulta Gratuita</span>
-              <span className="group-hover:translate-x-1 transition-transform">
-                →
-              </span>
-            </a>
-            <a
               href="https://wa.me/5492612005950?text=Hola%20Mendoza%20Web%20Lab%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20web."
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-emerald-400/60 bg-emerald-400/10 text-emerald-200 font-semibold hover:bg-emerald-400/20 hover:border-emerald-300 transition-all duration-300 backdrop-blur-sm"
+              className="inline-flex items-center justify-center gap-2 px-10 py-5 rounded-full border border-emerald-400/60 bg-emerald-400/10 text-emerald-200 font-semibold hover:bg-emerald-400/20 hover:border-emerald-300 transition-all duration-300 backdrop-blur-sm"
             >
               <span>Hablar por WhatsApp</span>
-              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)]" />
+              <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.8)] shrink-0" />
+            </a>
+            <a
+              href="#paquetes"
+              className="inline-flex items-center justify-center px-8 py-5 rounded-full bg-white/5 border border-white/10 text-brand-white font-semibold hover:bg-white/10 transition-all backdrop-blur-sm"
+            >
+              Ver paquetes
             </a>
           </div>
         </div>
