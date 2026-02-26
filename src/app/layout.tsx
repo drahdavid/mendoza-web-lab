@@ -3,9 +3,35 @@ import "./globals.css";
 import { Logo } from "@/components/Logo";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://mendozaweblab.com"),
   title: "Mendoza Web Lab | Tecnología que convierte.",
   description:
     "Desarrollo web moderno para negocios que quieren crecer. Creamos landing pages rápidas, optimizadas y diseñadas para generar más consultas.",
+  keywords: [
+    "desarrollo web",
+    "landing pages",
+    "mendoza",
+    "diseño web",
+    "seo",
+    "sitios web",
+    "agencia web",
+  ],
+  authors: [{ name: "Mendoza Web Lab" }],
+  openGraph: {
+    title: "Mendoza Web Lab | Tecnología que convierte.",
+    description:
+      "Desarrollo web moderno para negocios que quieren crecer. Creamos landing pages rápidas, optimizadas y diseñadas para generar más consultas.",
+    url: "https://mendozaweblab.com",
+    siteName: "Mendoza Web Lab",
+    locale: "es_AR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Mendoza Web Lab | Tecnología que convierte.",
+    description:
+      "Desarrollo web moderno para negocios que quieren crecer. Creamos landing pages rápidas, optimizadas y diseñadas para generar más consultas.",
+  },
 };
 
 export default function RootLayout({
@@ -18,7 +44,11 @@ export default function RootLayout({
       <body className="min-h-screen antialiased font-sans bg-brand-black text-brand-white selection:bg-brand-accent/30">
         <header className="fixed top-0 left-0 right-0 z-50 bg-brand-black/80 backdrop-blur-md border-b border-white/5">
           <nav className="max-w-7xl mx-auto px-6 py-1 flex items-center justify-between">
-            <a href="#" className="flex items-center group">
+            <a
+              href="#"
+              className="flex items-center group"
+              aria-label="Mendoza Web Lab - Ir al inicio"
+            >
               <Logo className="h-20 w-56 group-hover:scale-105 transition-transform duration-300" />
             </a>
             <div className="hidden md:flex items-center gap-8">

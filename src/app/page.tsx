@@ -19,6 +19,9 @@ export default function Home() {
       <section className="min-h-[90vh] flex flex-col justify-center relative pt-20 px-6 pb-24">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-brand-white leading-[1.05] tracking-tight mb-8">
+            <span className="block text-brand-accent text-sm md:text-base font-bold tracking-[0.2em] uppercase mb-4">
+              Mendoza Web Lab
+            </span>
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-brand-white via-brand-white to-brand-accent/50">
               Desarrollo web moderno
             </span>
@@ -26,8 +29,9 @@ export default function Home() {
             para negocios que escalan.
           </h1>
           <p className="text-xl text-brand-white/70 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Fusionamos diseño de vanguardia con ingeniería de precisión para
-            crear experiencias digitales que cautivan y convierten.
+            Fusionamos <strong>diseño de vanguardia</strong> con{" "}
+            <strong>ingeniería de precisión</strong> para crear experiencias
+            digitales que cautivan y convierten.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -59,8 +63,9 @@ export default function Home() {
       <section className="py-32 px-6 border-y border-white/5 bg-brand-gray/30 relative">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-2xl md:text-4xl font-medium text-brand-white/90 leading-[1.3] tracking-tight italic">
-            &quot;En un mundo digital saturado, la mediocridad es invisible. Tu
-            negocio merece una presencia que exija atención.&quot;
+            &quot;En un mundo digital saturado, la{" "}
+            <strong>mediocridad es invisible</strong>. Tu negocio merece una
+            presencia que exija atención.&quot;
           </h2>
         </div>
       </section>
