@@ -29,9 +29,9 @@ export default function Home() {
             para negocios que escalan.
           </h1>
           <p className="text-xl text-brand-white/70 max-w-2xl mx-auto mb-12 leading-relaxed">
-            Fusionamos <strong>diseño de vanguardia</strong> con{" "}
-            <strong>ingeniería de precisión</strong> para crear experiencias
-            digitales que cautivan y convierten.
+            Fusionamos <strong>diseño de alto nivel</strong> con{" "}
+            <strong>tecnología impecable</strong> para crear experiencias
+            digitales que cautivan y convierten visitas en ventas.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
@@ -82,32 +82,32 @@ export default function Home() {
             {[
               {
                 title: "Diseño Premium",
-                desc: "Interfaces que respiran exclusividad y refuerzan la autoridad de tu marca.",
+                desc: "Interfaces exclusivas que refuerzan la autoridad y profesionalismo de tu marca.",
                 Icon: Crown,
               },
               {
-                title: "Performance Lab",
-                desc: "Velocidad de carga instantánea optimizada para Core Web Vitals.",
+                title: "Velocidad Lab",
+                desc: "Carga instantánea para que tus clientes no esperen ni un segundo en entrar.",
                 Icon: Gauge,
               },
               {
                 title: "Estrategia SEO",
-                desc: "Visibilidad orgánica para que tus clientes ideales te encuentren primero.",
+                desc: "Aparece en los primeros resultados cuando tus clientes busquen lo que ofreces.",
                 Icon: Search,
               },
               {
-                title: "Mobile First",
-                desc: "Experiencias fluidas y adaptativas en cualquier dispositivo.",
+                title: "Diseño para Celulares",
+                desc: "Tu web se verá perfecta y será fácil de usar en cualquier teléfono o tablet.",
                 Icon: Smartphone,
               },
               {
-                title: "Conversión Lab",
-                desc: "Psicología aplicada al diseño para maximizar el retorno de inversión.",
+                title: "Enfocado en Ventas",
+                desc: "Cada elemento está pensado para guiar a tus visitas hacia la compra o consulta.",
                 Icon: FlaskConical,
               },
               {
                 title: "Soporte Continuo",
-                desc: "Mantenimiento y evolución constante de tu activo digital.",
+                desc: "Nos encargamos de que tu web esté siempre activa, segura y actualizada.",
                 Icon: LifeBuoy,
               },
             ].map((item, i) => (
@@ -174,14 +174,14 @@ export default function Home() {
               <div className="flex-1 flex flex-col space-y-3 text-sm">
                 <p className="text-brand-white/70 font-medium">Incluye:</p>
                 <ul className="space-y-2 text-brand-white/60">
-                  <li>✔ Logo minimalista (1 propuesta + 1 ajuste)</li>
-                  <li>✔ Paleta de colores y tipografía</li>
-                  <li>✔ Landing de 1 página (hasta 5 secciones)</li>
-                  <li>✔ Diseño responsive</li>
-                  <li>✔ Botón de WhatsApp</li>
-                  <li>✔ Mapa integrado</li>
-                  <li>✔ Hosting básico + SSL (sitio seguro)</li>
-                  <li>✔ 1 ronda de cambios</li>
+                  <li>✔ Diseño de Logo (con una ronda de ajustes)</li>
+                  <li>✔ Colores y letras profesionales para tu marca</li>
+                  <li>✔ Página web completa (con hasta 5 secciones)</li>
+                  <li>✔ Se adapta a celulares y tablets</li>
+                  <li>✔ Integración con WhatsApp e Instagram</li>
+                  <li>✔ Ubicación de tu negocio en el mapa</li>
+                  <li>✔ Seguridad avanzada (sitio seguro) y alojamiento</li>
+                  <li>✔ Una sesión de cambios finales</li>
                 </ul>
                 <p className="pt-6 text-brand-white/50 text-xs uppercase tracking-wide">
                   No incluye:
@@ -231,17 +231,14 @@ export default function Home() {
               <div className="flex-1 flex flex-col space-y-3 text-sm">
                 <p className="text-brand-white/70 font-medium">Incluye:</p>
                 <ul className="space-y-2 text-brand-white/70">
-                  <li>✔ Branding completo (logo + sistema visual básico)</li>
-                  <li>✔ Landing optimizada para conversión</li>
-                  <li>✔ Diseño personalizado</li>
-                  <li>✔ Hasta 6 secciones</li>
-                  <li>✔ Optimización mobile avanzada</li>
-                  <li>✔ SEO local básico</li>
-                  <li>✔ Formulario funcional</li>
-                  <li>✔ Google Analytics + Meta Pixel / GTM</li>
-                  <li>✔ Velocidad optimizada (Core Web Vitals)</li>
-                  <li>✔ Configuración dominio + hosting</li>
-                  <li>✔ 2 rondas de ajustes</li>
+                  <li>✔ Imagen de marca completa (logo + identidad visual)</li>
+                  <li>✔ Web diseñada para generar más consultas</li>
+                  <li>✔ Diseño 100% personalizado para tu negocio</li>
+                  <li>✔ Hasta 6 secciones diferentes</li>
+                  <li>✔ Experiencia superior en teléfonos móviles</li>
+                  <li>✔ Configuración de tu nombre .com y alojamiento</li>
+                  <li>✔ Integración directa con WhatsApp e Instagram</li>
+                  <li>✔ Dos rondas de ajustes finales</li>
                 </ul>
               </div>
               <a
@@ -276,16 +273,18 @@ export default function Home() {
               <div className="flex-1 flex flex-col space-y-3 text-sm">
                 <p className="text-brand-white/70 font-medium">Incluye:</p>
                 <ul className="space-y-2 text-brand-white/60">
-                  <li>✔ Branding estratégico completo</li>
-                  <li>✔ Manual visual básico</li>
-                  <li>✔ Web de 4–6 páginas (no solo landing)</li>
-                  <li>✔ Copy estructurado</li>
-                  <li>✔ Optimización de performance</li>
-                  <li>✔ SEO técnico inicial</li>
-                  <li>✔ Configuración inicial (CRM / Mail / Pixel Meta)</li>
-                  <li>✔ Analytics + Search Console</li>
-                  <li>✔ Sesión de handover (entrega y uso)</li>
-                  <li>✔ 3 rondas de ajustes</li>
+                  <li>✔ Estrategia de marca y diseño completo</li>
+                  <li>✔ Guía de uso de tu nueva identidad visual</li>
+                  <li>✔ Web de varias páginas (no solo una landing)</li>
+                  <li>✔ Textos profesionales pensados para vender</li>
+                  <li>✔ Optimización técnica de alto rendimiento</li>
+                  <li>✔ Preparado para aparecer en Google</li>
+                  <li>
+                    ✔ Conexión total con WhatsApp, Instagram y redes sociales
+                  </li>
+                  <li>✔ Reportes de Google y buscador oficial</li>
+                  <li>✔ Entrega final y guía para que sepas usar tu web</li>
+                  <li>✔ Tres rondas de ajustes para que quede perfecto</li>
                 </ul>
               </div>
               <a
