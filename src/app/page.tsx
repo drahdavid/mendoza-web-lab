@@ -58,6 +58,7 @@ const SOLUTION_CARDS = [
 const PACKAGES = [
   {
     id: "start",
+    featured: false,
     badge: "Pack Presencia Start",
     badgeColor: "bg-emerald-500/15 text-emerald-300",
     borderHover: "hover:border-emerald-300/50",
@@ -110,6 +111,7 @@ const PACKAGES = [
   },
   {
     id: "marca-web",
+    featured: false,
     badge: "Marca + Web Profesional",
     badgeColor: "bg-violet-500/15 text-violet-300",
     borderHover: "hover:border-violet-400/50",
@@ -215,11 +217,11 @@ export default function Home() {
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-brand-white leading-[1.05] tracking-tight mb-8">
             <span className="block">Más clientes empiezan</span>
-            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-brand-accent via-brand-white to-brand-white">
+            <span className="inline-block whitespace-nowrap bg-clip-text bg-gradient-to-r from-brand-accent via-brand-white to-brand-white">
               en Google.
             </span>
             <span className="block">Nosotros hacemos que</span>
-            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-brand-white to-brand-accent/70">
+            <span className="inline-block bg-clip-text text-transparent bg-gradient-to-r from-brand-white to-brand-accent/70">
               te encuentren.
             </span>
           </h1>
