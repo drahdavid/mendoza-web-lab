@@ -2,36 +2,38 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { Logo } from "@/components/Logo";
+import { MobileMenu } from "@/components/MobileMenu";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://mendozaweblab.com"),
-  title: "Mendoza Web Lab | Hacemos que te encuentren.",
+  title: "Web Lab | Hacemos que te encuentren.",
   description:
-    "Creamos identidad y presencia web profesional para negocios de Mendoza que quieren verse mejor y generar más consultas. Diseño web, SEO local y branding.",
+    "Creamos identidad y presencia web profesional para negocios que quieren verse mejor y generar más consultas. Diseño web, SEO y branding.",
   keywords: [
+    "diseño web",
+    "páginas web profesionales",
+    "presencia web",
+    "seo local",
+    "branding",
+    "landing page",
+    "agencia web argentina",
     "diseño web mendoza",
-    "páginas web mendoza",
-    "presencia web mendoza",
-    "seo local mendoza",
-    "branding mendoza",
-    "landing page mendoza",
-    "agencia web mendoza argentina",
   ],
-  authors: [{ name: "Mendoza Web Lab" }],
+  authors: [{ name: "Web Lab" }],
   openGraph: {
-    title: "Mendoza Web Lab | Hacemos que te encuentren.",
+    title: "Web Lab | Hacemos que te encuentren.",
     description:
-      "Creamos identidad y presencia web profesional para negocios de Mendoza que quieren verse mejor y generar más consultas.",
+      "Creamos identidad y presencia web profesional para negocios que quieren verse mejor y generar más consultas.",
     url: "https://mendozaweblab.com",
-    siteName: "Mendoza Web Lab",
+    siteName: "Web Lab",
     locale: "es_AR",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Mendoza Web Lab | Hacemos que te encuentren.",
+    title: "Web Lab | Hacemos que te encuentren.",
     description:
-      "Creamos identidad y presencia web profesional para negocios de Mendoza que quieren verse mejor y generar más consultas.",
+      "Creamos identidad y presencia web profesional para negocios que quieren verse mejor y generar más consultas.",
   },
   icons: {
     icon: "/favicon.png",
@@ -48,7 +50,7 @@ const NAV_LINKS = [
 ] as const;
 
 const WA_URL =
-  "https://wa.me/5492612005950?text=Hola%20Mendoza%20Web%20Lab%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20web.";
+  "https://wa.me/5492612005950?text=Hola%20Web%20Lab%2C%20me%20gustar%C3%ADa%20hablar%20sobre%20un%20proyecto%20web.";
 
 export default function RootLayout({
   children,
@@ -80,11 +82,12 @@ export default function RootLayout({
             <a
               href="/"
               className="flex items-center group"
-              aria-label="Mendoza Web Lab - Ir al inicio"
+              aria-label="Web Lab - Ir al inicio"
             >
               <Logo className="h-20 w-56 group-hover:scale-105 transition-transform duration-300" />
             </a>
 
+            {/* Desktop nav */}
             <div className="hidden md:flex items-center gap-6">
               {NAV_LINKS.map(({ href, label }) => (
                 <a
@@ -105,15 +108,8 @@ export default function RootLayout({
               </a>
             </div>
 
-            {/* Mobile CTA */}
-            <a
-              href={WA_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="md:hidden px-4 py-2 bg-brand-accent text-white text-sm rounded-full font-semibold"
-            >
-              Propuesta
-            </a>
+            {/* Mobile: hamburger */}
+            <MobileMenu links={NAV_LINKS} waUrl={WA_URL} />
           </nav>
         </header>
 
