@@ -12,10 +12,12 @@ import {
   Code2,
   Rocket,
   ChevronDown,
+  Info,
 } from "lucide-react";
 import { useState } from "react";
 import { ContactForm } from "@/components/ContactForm";
 import { DiagnosticModal } from "@/components/DiagnosticModal";
+import { Tooltip } from "@/components/Tooltip";
 
 // ─── Constants ────────────────────────────────────────────────────────────────
 
@@ -72,8 +74,8 @@ type Package = {
   desc: string;
   price: string;
   delivery: string;
-  includes: readonly string[];
-  excludes: readonly string[];
+  includes: readonly { text: string; tooltip: string }[];
+  excludes: readonly { text: string; tooltip: string }[];
   demoHref: string;
   waText: string;
 };
@@ -93,18 +95,57 @@ const PACKAGES: Package[] = [
     price: "Desde $190.000",
     delivery: "Entrega estimada: 5–7 días hábiles",
     includes: [
-      "Logo minimalista (1 propuesta + 1 ajuste)",
-      "Paleta de colores y tipografía de marca",
-      "Landing de 1 página (hasta 5 secciones)",
-      "Responsive para celulares y tablets",
-      "Botón WhatsApp + mapa de ubicación",
-      "Hosting básico + deploy",
-      "1 ronda de cambios",
+      {
+        text: "Logo minimalista (1 propuesta + 1 ajuste)",
+        tooltip:
+          "Diseño inicial del logo para tu marca, un formato rápido y simple.",
+      },
+      {
+        text: "Paleta de colores y tipografía de marca",
+        tooltip:
+          "Colores y estilos de letra definidos para que tu marca se vea profesional y coherente.",
+      },
+      {
+        text: "Landing de 1 página (hasta 5 secciones)",
+        tooltip:
+          "Una única página web estructurada con toda la información clave de tu negocio. Ideal para presentar servicios rápido.",
+      },
+      {
+        text: "Responsive para celulares y tablets",
+        tooltip:
+          "Tu web se verá perfecta y será fácil de usar desde cualquier teléfono o dispositivo.",
+      },
+      {
+        text: "Botón WhatsApp + mapa de ubicación",
+        tooltip:
+          "Tus clientes podrán contactarte directamente por WhatsApp a un clic de distancia.",
+      },
+      {
+        text: "Hosting básico + deploy",
+        tooltip:
+          "Nos encargamos de subir tu web a internet para que esté visible para todos, sin dolores de cabeza técnicos.",
+      },
+      {
+        text: "1 ronda de cambios",
+        tooltip: "Una revisión para ajustar detalles antes de publicar.",
+      },
     ],
     excludes: [
-      "SEO avanzado",
-      "Integraciones complejas",
-      "Copywriting estratégico",
+      {
+        text: "SEO avanzado",
+        tooltip:
+          "Optimización técnica profunda para aparecer en los primeros resultados de Google.",
+      },
+      {
+        text: "Integraciones complejas",
+        tooltip:
+          "Conexiones con sistemas de reservas, tiendas online o CRM empresariales.",
+      },
+      {
+        text: "Copywriting estratégico",
+        tooltip:
+          "Redacción de textos persuasivos diseñados específicamente para vender a tu cliente ideal.",
+      },
     ],
     demoHref: "/demo/start",
     waText:
@@ -124,14 +165,46 @@ const PACKAGES: Package[] = [
     price: "Desde $780.000",
     delivery: "Entrega estimada: 10–15 días hábiles",
     includes: [
-      "Branding completo (logo + sistema visual básico)",
-      "Landing optimizada (hasta 6 secciones)",
-      "Diseño 100% personalizado (no templates)",
-      "Formulario de contacto funcional",
-      "SEO local básico (aparecer en Google)",
-      "Google Analytics (sabés de dónde llegan tus clientes)",
-      "Configuración dominio + hosting",
-      "2 rondas de ajustes",
+      {
+        text: "Branding completo (logo + sistema visual básico)",
+        tooltip:
+          "Diseño de logo y elementos visuales que le dan vida y personalidad a tu marca.",
+      },
+      {
+        text: "Landing optimizada (hasta 6 secciones)",
+        tooltip:
+          "Página diseñada detalladamente no sólo para informar, sino para convertir visitantes en clientes.",
+      },
+      {
+        text: "Diseño 100% personalizado (no templates)",
+        tooltip:
+          "Tu web tendrá un diseño único, pensado desde cero exclusivamente para tu negocio.",
+      },
+      {
+        text: "Formulario de contacto funcional",
+        tooltip:
+          "Tus visitas podrán dejarte sus datos o consultas directamente desde la web para responderles al instante.",
+      },
+      {
+        text: "SEO local básico (aparecer en Google)",
+        tooltip:
+          "Configuraciones iniciales para que las personas de tu zona te encuentren en las búsquedas de Google.",
+      },
+      {
+        text: "Google Analytics (sabés de dónde llegan tus clientes)",
+        tooltip:
+          "Herramienta que te permite ver cuánta gente visita tu web, qué miran y desde dónde llegan.",
+      },
+      {
+        text: "Configuración dominio + hosting",
+        tooltip:
+          "Te ayudamos a registrar el nombre de tu web (.com o .com.ar) y la subimos a internet sin estrés.",
+      },
+      {
+        text: "2 rondas de ajustes",
+        tooltip:
+          "Dos instancias de revisión para dejar tu web exactamente como te gusta.",
+      },
     ],
     excludes: [],
     demoHref: "/demo/pro",
@@ -152,14 +225,45 @@ const PACKAGES: Package[] = [
     price: "Desde $1.480.000",
     delivery: "Entrega estimada: 15–25 días hábiles",
     includes: [
-      "Branding estratégico completo + mini guía de marca",
-      "Web de 4–6 páginas (no solo una landing)",
-      "Copywriting estructurado (textos que venden)",
-      "Optimización de performance (velocidad real)",
-      "SEO técnico inicial",
-      "Integraciones (CRM / Mail / Pixel)",
-      "Analytics + Search Console",
-      "3 rondas de ajustes",
+      {
+        text: "Branding estratégico completo + mini guía de marca",
+        tooltip:
+          "Construimos la identidad visual completa de tu negocio, sumado a un manual de uso para el futuro.",
+      },
+      {
+        text: "Web de 4–6 páginas (no solo una landing)",
+        tooltip:
+          "Un sitio web completo con páginas separadas para Inicio, Nosotros, Servicios, Contacto, Preguntas, etc.",
+      },
+      {
+        text: "Copywriting estructurado (textos que venden)",
+        tooltip:
+          "Escribimos los textos de tu web con técnicas persuasivas para convencer y comunicar efectivamente a tus clientes.",
+      },
+      {
+        text: "Optimización de performance (velocidad real)",
+        tooltip:
+          "Aseguramos que tu web cargue súper rápido, lo cual mejora la experiencia y ayuda significativamente en Google.",
+      },
+      {
+        text: "SEO técnico inicial",
+        tooltip:
+          "Ajustes avanzados en código y semántica para ayudar a Google a entender mejor tu sitio e indexarlo eficientemente.",
+      },
+      {
+        text: "Integraciones (CRM / Mail / Pixel)",
+        tooltip:
+          "Conectamos tu web con herramientas de marketing como Facebook Pixel, sistemas de email o herramientas de gestión de clientes.",
+      },
+      {
+        text: "Analytics + Search Console",
+        tooltip:
+          "Te instalamos herramientas completas de Google para monitorear tu tráfico web, rendimiento en buscadores y salud del sitio.",
+      },
+      {
+        text: "3 rondas de ajustes",
+        tooltip: "Tres instancias de revisión y perfeccionamiento detallado.",
+      },
     ],
     excludes: [],
     demoHref: "/demo/marca-web",
@@ -464,11 +568,16 @@ export default function Home() {
                 <div className="flex-1 space-y-4 text-sm">
                   <ul className="space-y-2 text-brand-white/65">
                     {pkg.includes.map((item) => (
-                      <li key={item} className="flex gap-2">
+                      <li key={item.text} className="flex gap-2">
                         <span className="text-brand-mint shrink-0 mt-0.5">
                           ✓
                         </span>
-                        {item}
+                        <span>{item.text}</span>
+                        {item.tooltip && (
+                          <Tooltip text={item.tooltip}>
+                            <Info className="w-4 h-4 text-brand-white/40 hover:text-brand-white/80 transition-colors mt-0.5 cursor-help" />
+                          </Tooltip>
+                        )}
                       </li>
                     ))}
                   </ul>
@@ -480,7 +589,18 @@ export default function Home() {
                       </p>
                       <ul className="space-y-1.5 text-brand-white/35 text-xs">
                         {pkg.excludes.map((item) => (
-                          <li key={item}>– {item}</li>
+                          <li
+                            key={item.text}
+                            className="flex gap-2 text-brand-white/35"
+                          >
+                            <span className="shrink-0">–</span>
+                            <span>{item.text}</span>
+                            {item.tooltip && (
+                              <Tooltip text={item.tooltip}>
+                                <Info className="w-4 h-4 text-brand-white/40 hover:text-brand-white/80 transition-colors cursor-help" />
+                              </Tooltip>
+                            )}
+                          </li>
                         ))}
                       </ul>
                     </>
