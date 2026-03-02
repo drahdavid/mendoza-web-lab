@@ -1,20 +1,22 @@
 import { ChevronDown } from "lucide-react";
 import { SectionLabel } from "./SectionLabel";
-import { FAQ_ITEMS } from "../constants";
+import { getFaqItems } from "../constants";
+import type { Dictionary } from "@/dictionaries/types";
 
-export const FaqSection = () => {
+export const FaqSection = ({ dict }: { dict: Dictionary }) => {
+  const items = getFaqItems(dict);
   return (
     <section id="faq" className="py-32 px-6">
       <div className="max-w-3xl mx-auto">
         <div className="mb-16 text-center">
-          <SectionLabel>Preguntas frecuentes</SectionLabel>
+          <SectionLabel>{dict.faq.label}</SectionLabel>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-white tracking-tight">
-            Todo lo que querés saber
+            {dict.faq.title}
           </h2>
         </div>
 
         <div className="space-y-4">
-          {FAQ_ITEMS.map(({ q, a }) => (
+          {items.map(({ q, a }) => (
             <details
               key={q}
               className="group rounded-2xl border border-white/[0.06] bg-white/[0.02] hover:border-brand-accent/20 transition-colors"

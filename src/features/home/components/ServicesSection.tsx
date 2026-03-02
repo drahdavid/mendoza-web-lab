@@ -1,23 +1,25 @@
 import { SectionLabel } from "./SectionLabel";
-import { SOLUTION_CARDS } from "../constants";
+import { getSolutionCards } from "../constants";
+import type { Dictionary } from "@/dictionaries/types";
 
-export const ServicesSection = () => {
+export const ServicesSection = ({ dict }: { dict: Dictionary }) => {
+  const cards = getSolutionCards(dict);
+
   return (
     <section id="servicios" className="py-32 px-6">
       <div className="max-w-6xl mx-auto">
         <div className="mb-16 max-w-xl">
-          <SectionLabel>Qué hacemos</SectionLabel>
+          <SectionLabel>{dict.services.label}</SectionLabel>
           <h2 className="text-3xl md:text-4xl font-bold text-brand-white tracking-tight">
-            Presencia real. Resultados concretos.
+            {dict.services.title}
           </h2>
           <p className="mt-4 text-brand-white/55 leading-relaxed">
-            Cada proyecto incluye diseño, tecnología y estrategia orientada a
-            que tu negocio genere más consultas.
+            {dict.services.subtitle}
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {SOLUTION_CARDS.map(({ title, desc, Icon }) => (
+          {cards.map(({ title, desc, Icon }) => (
             <div
               key={title}
               className="group p-8 rounded-2xl bg-white/[0.02] border border-white/[0.05] hover:border-brand-accent/30 hover:bg-white/[0.04] transition-all duration-400"

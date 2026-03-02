@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import type { Dictionary } from "@/dictionaries/types";
 
 type FormState = "idle" | "loading" | "success" | "error";
 
@@ -25,7 +26,7 @@ const SERVICE_ID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID ?? "";
 const TEMPLATE_ID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID ?? "";
 const PUBLIC_KEY = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY ?? "";
 
-export const ContactForm = () => {
+export const ContactForm = ({ dict }: { dict: Dictionary }) => {
   const [formData, setFormData] = useState<FormData>(INITIAL_FORM);
   const [state, setState] = useState<FormState>("idle");
 
@@ -69,7 +70,7 @@ export const ContactForm = () => {
           ✓
         </div>
         <h3 className="text-xl font-bold text-brand-white">
-          ¡Mensaje recibido!
+          {dict.contact.form.success}
         </h3>
         <p className="text-brand-white/55 text-sm max-w-xs leading-relaxed">
           Nos ponemos en contacto dentro de las próximas 24 horas hábiles.
@@ -90,20 +91,20 @@ export const ContactForm = () => {
       className="flex flex-col gap-4 p-7 rounded-2xl bg-white/[0.02] border border-white/[0.06]"
     >
       <h3 className="text-lg font-bold text-brand-white mb-1">
-        Contanos sobre tu proyecto
+        {dict.contact.form.messagePlaceholder}
       </h3>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
           <label className="text-xs font-medium text-brand-white/50 uppercase tracking-wider">
-            Tu nombre
+            {dict.contact.form.name}
           </label>
           <input
             id="contact-nombre"
             type="text"
             name="nombre"
             required
-            placeholder="Juan García"
+            placeholder={dict.contact.form.namePlaceholder}
             value={formData.nombre}
             onChange={handleChange}
             className={inputClass}
@@ -129,14 +130,14 @@ export const ContactForm = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
         <div className="flex flex-col gap-1.5">
           <label className="text-xs font-medium text-brand-white/50 uppercase tracking-wider">
-            Email
+            {dict.contact.form.email}
           </label>
           <input
             id="contact-email"
             type="email"
             name="email"
             required
-            placeholder="juan@email.com"
+            placeholder={dict.contact.form.emailPlaceholder}
             value={formData.email}
             onChange={handleChange}
             className={inputClass}
@@ -144,16 +145,16 @@ export const ContactForm = () => {
         </div>
         <div className="flex flex-col gap-1.5">
           <label className="text-xs font-medium text-brand-white/50 uppercase tracking-wider">
-            WhatsApp{" "}
+            {dict.contact.form.phone}{" "}
             <span className="normal-case font-normal text-brand-white/30">
-              (opcional)
+              {dict.contact.form.phoneOptional}
             </span>
           </label>
           <input
             id="contact-whatsapp"
             type="tel"
             name="whatsapp"
-            placeholder="+54 9 261 000 0000"
+            placeholder={dict.contact.form.phonePlaceholder}
             value={formData.whatsapp}
             onChange={handleChange}
             className={inputClass}
@@ -163,14 +164,14 @@ export const ContactForm = () => {
 
       <div className="flex flex-col gap-1.5">
         <label className="text-xs font-medium text-brand-white/50 uppercase tracking-wider">
-          ¿Qué necesitás?
+          {dict.contact.form.message}
         </label>
         <textarea
           id="contact-mensaje"
           name="mensaje"
           required
           rows={4}
-          placeholder="Contanos brevemente tu negocio y qué estás buscando lograr con una web..."
+          placeholder={dict.contact.form.messagePlaceholder}
           value={formData.mensaje}
           onChange={handleChange}
           className={`${inputClass} resize-none`}
@@ -179,7 +180,7 @@ export const ContactForm = () => {
 
       {state === "error" && (
         <p className="text-red-400 text-xs text-center">
-          Hubo un error al enviar. Intentá de nuevo o escribinos por WhatsApp.
+          {dict.contact.form.error}
         </p>
       )}
 
@@ -189,11 +190,13 @@ export const ContactForm = () => {
         disabled={state === "loading"}
         className="w-full py-3.5 rounded-xl bg-brand-accent text-white font-semibold text-sm hover:bg-brand-accent/90 hover:shadow-[0_0_24px_rgba(59,130,246,0.4)] transition-all duration-300 transform hover:-translate-y-0.5 disabled:opacity-60 disabled:cursor-not-allowed disabled:transform-none"
       >
-        {state === "loading" ? "Enviando..." : "Enviar mensaje"}
+        {state === "loading"
+          ? dict.contact.form.sending
+          : dict.contact.form.submit}
       </button>
 
       <p className="text-center text-xs text-brand-white/25">
-        También podés escribirnos directo por WhatsApp. Sin spam, prometido.
+        {dict.contact.form.footnote}
       </p>
     </form>
   );
