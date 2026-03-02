@@ -77,69 +77,55 @@ export const es: Dictionary = {
     forWhom: "¿Para quién?",
     viewDemo: "Ver demo",
     compareTitle: "Comparar características al detalle",
+    mostPopular: "Más elegido",
     cards: {
       start: {
         badge: "Pack Start",
         title: "Presencia Start",
         audience:
-          "Emprendedores y negocios que recién arrancan y necesitan existir en internet sin complicarse.",
-        diff: "Existís online en menos de una semana",
-        desc: "Una identidad mínima y una web simple pero profesional. El primer paso para que te encuentren.",
+          "Para negocios en etapa de lanzamiento que necesitan una presencia profesional online — rápida, limpia y sin complicaciones.",
+        diff: "Establecé tu presencia — online en menos de una semana",
+        desc: "Identidad esencial y presencia web para que te encuentren. Diseñado para lanzar rápido y verse creíble desde el día uno.",
         price: "Desde $190.000",
         delivery: "Entrega estimada: 5–7 días hábiles",
         includes: [
           {
             text: "Logo minimalista (1 propuesta + 1 ajuste)",
             tooltip:
-              "Diseño inicial del logo para tu marca, un formato rápido y simple.",
+              "Identidad esencial para la etapa de lanzamiento — una marca limpia y profesional que te establece desde el día uno.",
           },
           {
             text: "Paleta de colores y tipografía de marca",
             tooltip:
-              "Colores y estilos de letra definidos para que tu marca se vea profesional y coherente.",
+              "La base visual de tu identidad esencial: colores y fuentes definidos para que tu marca se vea coherente desde el arranque.",
           },
           {
             text: "Landing de 1 página (hasta 5 secciones)",
             tooltip:
-              "Una única página web estructurada con toda la información clave de tu negocio. Ideal para presentar servicios rápido.",
+              "Tu presencia web esencial — una página estructurada con toda la info clave para que tu audiencia confíe en vos y te contacte.",
           },
           {
             text: "Responsive para celulares y tablets",
             tooltip:
-              "Tu web se verá perfecta y será fácil de usar desde cualquier teléfono o dispositivo.",
+              "Construida mobile-first para que tu presencia funcione perfecto en cualquier dispositivo, desde el lanzamiento.",
           },
           {
             text: "Botón WhatsApp + mapa de ubicación",
             tooltip:
-              "Tus clientes podrán contactarte directamente por WhatsApp a un clic de distancia.",
+              "Seguimiento básico de tu canal de consulta más directo — tus clientes te contactan con un clic.",
           },
           {
             text: "Hosting básico + deploy",
             tooltip:
-              "Nos encargamos de subir tu web a internet para que esté visible para todos, sin dolores de cabeza técnicos.",
+              "Nos encargamos de publicar tu web para que quede indexada y estructurada en Google desde el día uno, sin dolores de cabeza técnicos.",
           },
           {
-            text: "1 ronda de cambios",
-            tooltip: "Una revisión para ajustar detalles antes de publicar.",
+            text: "Ajuste guiado incluido",
+            tooltip:
+              "Ajuste guiado — una instancia de revisión enfocada para pulir tu lanzamiento antes de salir en vivo.",
           },
         ],
-        excludes: [
-          {
-            text: "SEO avanzado",
-            tooltip:
-              "Optimización técnica profunda para aparecer en los primeros resultados de Google.",
-          },
-          {
-            text: "Integraciones complejas",
-            tooltip:
-              "Conexiones con sistemas de reservas, tiendas online o CRM empresariales.",
-          },
-          {
-            text: "Copywriting estratégico",
-            tooltip:
-              "Redacción de textos persuasivos diseñados específicamente para vender a tu cliente ideal.",
-          },
-        ],
+        excludes: [],
         waText:
           "Hola Web Lab, me interesa el Pack Start (desde $190.000). Quisiera más info.",
       },
@@ -147,51 +133,51 @@ export const es: Dictionary = {
         badge: "Pack Pro",
         title: "Presencia Pro",
         audience:
-          "Negocios que ya funcionan y quieren verse bien para atraer más clientes desde Google.",
-        diff: "Diseño a medida + aparecer en Google",
-        desc: "La combinación justa de diseño profesional, SEO básico y herramientas para generar consultas desde el día uno.",
+          "Para negocios en crecimiento listos para generar leads consistentes — con sistema de marca, foco en conversión y visibilidad en Google.",
+        diff: "Generá leads consistentes desde Google",
+        desc: "Una experiencia orientada a la conversión con un sistema de marca estructurado — el setup ideal para un negocio que activamente busca crecer su base de clientes.",
         price: "Desde $780.000",
         delivery: "Entrega estimada: 10–15 días hábiles",
         includes: [
           {
             text: "Branding completo (logo + sistema visual básico)",
             tooltip:
-              "Diseño de logo y elementos visuales que le dan vida y personalidad a tu marca.",
+              "Un sistema de marca estructurado para la etapa de crecimiento — logo, colores y elementos visuales que atraen y convierten de forma consistente.",
           },
           {
             text: "Landing optimizada (hasta 6 secciones)",
             tooltip:
-              "Página diseñada detalladamente no sólo para informar, sino para convertir visitantes en clientes.",
+              "Una experiencia orientada a la conversión, diseñada para transformar visitantes en leads consistentes.",
           },
           {
             text: "Diseño 100% personalizado (no templates)",
             tooltip:
-              "Tu web tendrá un diseño único, pensado desde cero exclusivamente para tu negocio.",
+              "Construido exclusivamente para tu negocio — un diseño único que refuerza tu marca y apoya la generación de leads.",
           },
           {
             text: "Formulario de contacto funcional",
             tooltip:
-              "Tus visitas podrán dejarte sus datos o consultas directamente desde la web para responderles al instante.",
+              "Parte de tu infraestructura de conversión — los visitantes dejan sus datos directamente, alimentando tu pipeline de leads.",
           },
           {
             text: "SEO local básico (aparecer en Google)",
             tooltip:
-              "Configuraciones iniciales para que las personas de tu zona te encuentren en las búsquedas de Google.",
+              "Optimizado para visibilidad — configuración inicial en Google para que las personas de tu zona te encuentren al buscar.",
           },
           {
             text: "Google Analytics (sabés de dónde llegan tus clientes)",
             tooltip:
-              "Herramienta que te permite ver cuánta gente visita tu web, qué miran y desde dónde llegan.",
+              "Analytics de performance — entendés de dónde vienen tus leads para potenciar lo que funciona.",
           },
           {
             text: "Configuración dominio + hosting",
             tooltip:
-              "Te ayudamos a registrar el nombre de tu web (.com o .com.ar) y la subimos a internet sin estrés.",
+              "Registramos y configuramos tu dominio y hosting para que tu presencia en crecimiento esté online sin fricción.",
           },
           {
-            text: "2 rondas de ajustes",
+            text: "Proceso de refinamiento estructurado",
             tooltip:
-              "Dos instancias de revisión para dejar tu web exactamente como te gusta.",
+              "Refinamiento estructurado — rondas de revisión enfocadas para que tu sitio funcione exactamente como necesitás.",
           },
         ],
         excludes: [],
@@ -202,51 +188,51 @@ export const es: Dictionary = {
         badge: "Pack Marca + Web",
         title: "Marca + Web Profesional",
         audience:
-          "Marcas que quieren escalar y necesitan una estrategia real: más páginas, más herramientas, más presencia.",
-        diff: "Estrategia completa para escalar tu negocio",
-        desc: "No es solo una web. Es un sistema de presencia digital listo para crecer: branding, texto estratégico, integraciones y SEO técnico.",
+          "Para negocios en etapa de escalamiento que necesitan posicionamiento estratégico de marca, arquitectura de crecimiento escalable e infraestructura de analytics completa.",
+        diff: "Construí crecimiento escalable — estrategia en cada capa",
+        desc: "No es solo una web. Un sistema de crecimiento digital completo: posicionamiento estratégico de marca, copy de conversión, SEO técnico e integraciones completas.",
         price: "Desde $1.480.000",
         delivery: "Entrega estimada: 15–25 días hábiles",
         includes: [
           {
             text: "Branding estratégico completo + mini guía de marca",
             tooltip:
-              "Construimos la identidad visual completa de tu negocio, sumado a un manual de uso para el futuro.",
+              "Posicionamiento estratégico de marca para la etapa de escalamiento — identidad visual completa con guía de uso para mantener coherencia a medida que crecés.",
           },
           {
             text: "Web de 4–6 páginas (no solo una landing)",
             tooltip:
-              "Un sitio web completo con páginas separadas para Inicio, Nosotros, Servicios, Contacto, Preguntas, etc.",
+              "Arquitectura de crecimiento escalable — sitio multi-página completo con Inicio, Servicios, Nosotros, Contacto y Preguntas, listo para expandirse con tu negocio.",
           },
           {
             text: "Copywriting estructurado (textos que venden)",
             tooltip:
-              "Escribimos los textos de tu web con técnicas persuasivas para convencer y comunicar efectivamente a tus clientes.",
+              "Textos optimizados para conversión, escritos con estrategia persuasiva para comunicar y vender a tu cliente ideal a escala.",
           },
           {
             text: "Optimización de performance (velocidad real)",
             tooltip:
-              "Aseguramos que tu web cargue súper rápido, lo cual mejora la experiencia y ayuda significativamente en Google.",
+              "Performance + SEO técnico — una web rápida mejora directamente la experiencia del usuario y tu posición en Google.",
           },
           {
             text: "SEO técnico inicial",
             tooltip:
-              "Ajustes avanzados en código y semántica para ayudar a Google a entender mejor tu sitio e indexarlo eficientemente.",
+              "Estructurado para posicionar y escalar — marcado semántico y código avanzado para que Google entienda e indexe tu sitio a fondo.",
           },
           {
             text: "Integraciones (CRM / Mail / Pixel)",
             tooltip:
-              "Conectamos tu web con herramientas de marketing como Facebook Pixel, sistemas de email o herramientas de gestión de clientes.",
+              "Analytics completo + integraciones — conectamos tu web con Facebook Pixel, plataformas de email y CRM para un crecimiento escalable.",
           },
           {
             text: "Analytics + Search Console",
             tooltip:
-              "Te instalamos herramientas completas de Google para monitorear tu tráfico web, rendimiento en buscadores y salud del sitio.",
+              "Stack completo de analytics de Google: tráfico, rendimiento en búsquedas y salud técnica del sitio — todo en un dashboard.",
           },
           {
-            text: "3 rondas de ajustes",
+            text: "Refinamiento estratégico profundo",
             tooltip:
-              "Tres instancias de revisión y perfeccionamiento detallado.",
+              "Refinamiento estratégico profundo — múltiples rondas de revisión detalladas para afinar cada aspecto de tu sistema de crecimiento.",
           },
         ],
         excludes: [],
@@ -262,53 +248,53 @@ export const es: Dictionary = {
         marcaWeb: "Marca + Web",
       },
       rows: {
-        logo: {
-          label: "Logo incluido",
-          start: "Minimalista",
-          pro: "Completo",
-          marcaWeb: "Estratégico",
+        businessStage: {
+          label: "Etapa del negocio",
+          start: "Lanzamiento",
+          pro: "Crecimiento",
+          marcaWeb: "Escalamiento",
         },
-        design: {
-          label: "Diseño personalizado",
-          start: "—",
-          pro: "✓",
-          marcaWeb: "✓",
+        primaryGoal: {
+          label: "Objetivo principal",
+          start: "Establecer presencia",
+          pro: "Generar leads consistentes",
+          marcaWeb: "Construir crecimiento escalable",
         },
-        pages: {
-          label: "Páginas",
-          start: "1 (landing)",
-          pro: "1 (landing completa)",
-          marcaWeb: "4–6 páginas",
+        brandStrategy: {
+          label: "Estrategia de marca",
+          start: "Identidad esencial",
+          pro: "Sistema de marca estructurado",
+          marcaWeb: "Posicionamiento estratégico de marca",
         },
-        seo: {
-          label: "SEO Google",
-          start: "—",
-          pro: "Básico",
-          marcaWeb: "Técnico",
+        websiteStrategy: {
+          label: "Estrategia web",
+          start: "Presencia web esencial",
+          pro: "Experiencia orientada a conversión",
+          marcaWeb: "Arquitectura de crecimiento escalable",
         },
-        analytics: {
-          label: "Analytics",
-          start: "—",
-          pro: "✓",
-          marcaWeb: "✓ + Search Console",
+        googlePresence: {
+          label: "Presencia en Google",
+          start: "Indexado y estructurado",
+          pro: "Optimizado para visibilidad",
+          marcaWeb: "Estructurado para posicionar y escalar",
         },
-        copy: {
-          label: "Copywriting",
-          start: "—",
-          pro: "—",
-          marcaWeb: "✓",
+        growthInfrastructure: {
+          label: "Infraestructura de crecimiento",
+          start: "Seguimiento básico",
+          pro: "Analytics de performance",
+          marcaWeb: "Analytics completo + integraciones",
         },
-        integrations: {
-          label: "Integraciones (CRM/Mail/Pixel)",
-          start: "—",
-          pro: "—",
-          marcaWeb: "✓",
+        optimizationDepth: {
+          label: "Profundidad de optimización",
+          start: "Fundacional",
+          pro: "Optimización de conversión",
+          marcaWeb: "Performance + SEO técnico",
         },
-        revisions: {
-          label: "Rondas de ajuste",
-          start: "1",
-          pro: "2",
-          marcaWeb: "3",
+        strategicRefinement: {
+          label: "Refinamiento estratégico",
+          start: "Ajuste guiado",
+          pro: "Refinamiento estructurado",
+          marcaWeb: "Refinamiento estratégico profundo",
         },
       },
     },

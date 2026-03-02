@@ -49,7 +49,7 @@ export const PackagesSection = ({ dict }: { dict: Dictionary }) => {
             >
               {pkg.featured && (
                 <span className="absolute -top-3 left-1/2 -translate-x-1/2 text-[11px] font-bold text-white bg-brand-accent px-4 py-1 rounded-full uppercase tracking-wider">
-                  Más elegido
+                  {dict.packages.mostPopular}
                 </span>
               )}
 

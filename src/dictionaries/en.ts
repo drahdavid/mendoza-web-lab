@@ -77,69 +77,55 @@ export const en: Dictionary = {
     forWhom: "Who is it for?",
     viewDemo: "View demo",
     compareTitle: "Compare features in detail",
+    mostPopular: "Most Popular",
     cards: {
       start: {
         badge: "Start Pack",
         title: "Start Presence",
         audience:
-          "Entrepreneurs and businesses just starting out who need to exist online without complications.",
-        diff: "Be online in less than a week",
-        desc: "A minimal identity and a simple but professional website. The first step to being found.",
+          "For businesses in the Launching stage that need a professional presence online — fast, clean, and without complications.",
+        diff: "Establish your presence — live in under a week",
+        desc: "Essential identity and web presence to get found. Built to launch quickly and look credible from day one.",
         price: "From $160 – $190",
         delivery: "Estimated delivery: 5–7 business days",
         includes: [
           {
             text: "Minimalist Logo (1 proposal + 1 revision)",
             tooltip:
-              "Initial logo design for your brand, a quick and simple format.",
+              "Essential identity for the Launching stage — a clean, professional mark that establishes your brand from day one.",
           },
           {
             text: "Color Palette and Brand Typography",
             tooltip:
-              "Defined colors and font styles so your brand looks professional and flawless.",
+              "The visual foundation of your Essential Identity: defined colors and fonts so your brand looks coherent from launch.",
           },
           {
             text: "1-Page Landing (up to 5 sections)",
             tooltip:
-              "A single website structured with all the key information of your business. Ideal for showcasing services quickly.",
+              "Your Essential Web Presence — a single structured page with all the key info your audience needs to trust and contact you.",
           },
           {
             text: "Responsive for mobiles and tablets",
             tooltip:
-              "Your website will look perfect and be easy to use from any phone or device.",
+              "Built mobile-first so your presence works perfectly on every device, right from launch.",
           },
           {
             text: "WhatsApp button + location map",
             tooltip:
-              "Your clients can contact you directly via WhatsApp with just a click.",
+              "Basic tracking of your most direct inquiry channel — clients can reach you with one click.",
           },
           {
             text: "Basic Hosting + deploy",
             tooltip:
-              "We take care of uploading your website to the internet so it's visible, without technical headaches.",
+              "We handle publishing your site so it goes indexed & structured on Google from day one, without technical headaches.",
           },
           {
-            text: "1 round of revisions",
-            tooltip: "A review to adjust details before publishing.",
+            text: "Guided refinement included",
+            tooltip:
+              "Guided refinement — one focused review session to polish your launch before going live.",
           },
         ],
-        excludes: [
-          {
-            text: "Advanced SEO",
-            tooltip:
-              "Deep technical optimization to appear in the top Google results.",
-          },
-          {
-            text: "Complex integrations",
-            tooltip:
-              "Connections with booking systems, online stores, or enterprise CRMs.",
-          },
-          {
-            text: "Strategic Copywriting",
-            tooltip:
-              "Writing persuasive texts specifically designed to sell to your ideal client.",
-          },
-        ],
+        excludes: [],
         waText:
           "Hello Web Lab, I'm interested in the Start Pack (from $160 – $190). I would like more info.",
       },
@@ -147,51 +133,51 @@ export const en: Dictionary = {
         badge: "Pro Pack",
         title: "Pro Presence",
         audience:
-          "Established businesses that want to look good to attract more clients from Google.",
-        diff: "Custom design + Google visibility",
-        desc: "The right combination of professional design, basic SEO, and tools to generate inquiries from day one.",
+          "For Growing businesses ready to generate consistent leads — with a brand system, conversions in mind, and Google visibility.",
+        diff: "Generate consistent leads from Google",
+        desc: "A Conversion-Focused Experience with a Structured Brand System — the ideal setup for a business actively growing its client base.",
         price: "From $650 – $780",
         delivery: "Estimated delivery: 10–15 business days",
         includes: [
           {
             text: "Complete Branding (logo + basic visual system)",
             tooltip:
-              "Logo design and visual elements that breathe life and personality into your brand.",
+              "A Structured Brand System for the Growing stage — logo, colors, and visual elements that consistently attract and convert.",
           },
           {
             text: "Optimized Landing (up to 6 sections)",
             tooltip:
-              "Detailed page designed not just to inform, but to convert visitors into clients.",
+              "A Conversion-Focused Experience designed not just to inform, but to turn visitors into consistent leads.",
           },
           {
             text: "100% custom design (no templates)",
             tooltip:
-              "Your website will feature a unique design, built from scratch exclusively for your business.",
+              "Built exclusively for your business — a unique design that reinforces your brand and supports lead generation.",
           },
           {
             text: "Functional contact form",
             tooltip:
-              "Your visitors can leave their details or inquiries directly from the website for you to reply instantly.",
+              "Part of your conversion infrastructure — visitors can leave inquiries directly, feeding your lead pipeline.",
           },
           {
             text: "Basic Local SEO (appear in Google)",
             tooltip:
-              "Initial configurations so people in your area can find you on Google searches.",
+              "Optimized for visibility — initial Google configuration so people in your area find you when searching.",
           },
           {
             text: "Google Analytics (know where your clients come from)",
             tooltip:
-              "Tool that lets you see how many people visit your website, what they look at, and where they come from.",
+              "Performance analytics — understand where your leads come from so you can double down on what works.",
           },
           {
             text: "Domain + hosting setup",
             tooltip:
-              "We help register your website name (.com or .com.ar) and upload it stress-free.",
+              "We register and set up your domain and hosting so your growing presence is live without friction.",
           },
           {
-            text: "2 rounds of revisions",
+            text: "Structured refinement included",
             tooltip:
-              "Two review instances to get your website exactly how you want it.",
+              "Structured refinement — two focused review rounds to sharpen your site until it performs exactly as needed.",
           },
         ],
         excludes: [],
@@ -202,50 +188,51 @@ export const en: Dictionary = {
         badge: "Brand + Web Pack",
         title: "Professional Brand + Web",
         audience:
-          "Brands looking to scale that need a real strategy: more pages, more tools, more presence.",
-        diff: "Complete strategy to scale your business",
-        desc: "Not just a website. It's an entire digital presence system ready to grow: branding, strategic text, integrations, and technical SEO.",
+          "For businesses in the Scaling stage that need Strategic Brand Positioning, Scalable Growth Architecture, and full analytics infrastructure.",
+        diff: "Build scalable growth — strategy at every layer",
+        desc: "Not just a website. A complete digital growth system: Strategic Brand Positioning, conversion copy, technical SEO, and full integrations.",
         price: "From $1,200 – $1,480",
         delivery: "Estimated delivery: 15–25 business days",
         includes: [
           {
             text: "Complete strategic branding + mini brand guide",
             tooltip:
-              "We build the entire visual identity of your business, along with a usage manual for the future.",
+              "Strategic Brand Positioning for the Scaling stage — a complete visual identity with a brand guide to maintain consistency as you grow.",
           },
           {
             text: "4–6 page Website (not just a landing)",
             tooltip:
-              "A complete website with separate pages for Home, About Us, Services, Contact, FAQ, etc.",
+              "A Scalable Growth Architecture — a full multi-page site with Home, Services, About, Contact, and FAQ, built to expand with your business.",
           },
           {
             text: "Structured Copywriting (words that sell)",
             tooltip:
-              "We write your website copy using persuasive techniques to effectively convince and communicate with your clients.",
+              "Conversion-optimized copy written with persuasive strategy to communicate clearly and sell to your ideal client at scale.",
           },
           {
             text: "Performance optimization (real speed)",
             tooltip:
-              "We ensure your website loads super fast, which improves user experience and significantly helps on Google.",
+              "Performance + Technical SEO — a fast-loading site directly improves user experience and your Google ranking position.",
           },
           {
             text: "Initial technical SEO",
             tooltip:
-              "Advanced code and semantic tweaks to help Google understand your site better and index it efficiently.",
+              "Structured to rank & scale — advanced code and semantic markup so Google fully understands and indexes your site.",
           },
           {
             text: "Integrations (CRM / Mail / Pixel)",
             tooltip:
-              "We connect your website with marketing tools like Facebook Pixel, email systems, or client management software.",
+              "Full analytics + integrations — connect your site to Facebook Pixel, email platforms, and CRM tools for scalable growth.",
           },
           {
             text: "Analytics + Search Console",
             tooltip:
-              "We install complete Google tracking tools to monitor your web traffic, search engine performance, and site health.",
+              "Complete Google analytics stack: traffic monitoring, search performance, and technical site health — all in one dashboard.",
           },
           {
-            text: "3 rounds of revisions",
-            tooltip: "Three detailed instances of review and refinement.",
+            text: "Deep strategic refinement",
+            tooltip:
+              "Deep strategic refinement — multiple detailed review rounds to fine-tune every aspect of your growth system.",
           },
         ],
         excludes: [],
@@ -261,53 +248,53 @@ export const en: Dictionary = {
         marcaWeb: "Brand + Web",
       },
       rows: {
-        logo: {
-          label: "Logo Included",
-          start: "Minimalist",
-          pro: "Complete",
-          marcaWeb: "Strategic",
+        businessStage: {
+          label: "Business Stage",
+          start: "Launching",
+          pro: "Growing",
+          marcaWeb: "Scaling",
         },
-        design: {
-          label: "Custom Design",
-          start: "—",
-          pro: "✓",
-          marcaWeb: "✓",
+        primaryGoal: {
+          label: "Primary Goal",
+          start: "Establish presence",
+          pro: "Generate consistent leads",
+          marcaWeb: "Build scalable growth",
         },
-        pages: {
-          label: "Pages",
-          start: "1 (landing)",
-          pro: "1 (full landing)",
-          marcaWeb: "4–6 pages",
+        brandStrategy: {
+          label: "Brand Strategy",
+          start: "Essential Identity",
+          pro: "Structured Brand System",
+          marcaWeb: "Strategic Brand Positioning",
         },
-        seo: {
-          label: "Google SEO",
-          start: "—",
-          pro: "Basic",
-          marcaWeb: "Technical",
+        websiteStrategy: {
+          label: "Website Strategy",
+          start: "Essential Web Presence",
+          pro: "Conversion-Focused Experience",
+          marcaWeb: "Scalable Growth Architecture",
         },
-        analytics: {
-          label: "Analytics",
-          start: "—",
-          pro: "✓",
-          marcaWeb: "✓ + Search Console",
+        googlePresence: {
+          label: "Google Presence",
+          start: "Indexed & structured",
+          pro: "Optimized for visibility",
+          marcaWeb: "Structured to rank & scale",
         },
-        copy: {
-          label: "Copywriting",
-          start: "—",
-          pro: "—",
-          marcaWeb: "✓",
+        growthInfrastructure: {
+          label: "Growth Infrastructure",
+          start: "Basic tracking",
+          pro: "Performance analytics",
+          marcaWeb: "Full analytics + integrations",
         },
-        integrations: {
-          label: "Integrations (CRM/Mail/Pixel)",
-          start: "—",
-          pro: "—",
-          marcaWeb: "✓",
+        optimizationDepth: {
+          label: "Optimization Depth",
+          start: "Foundational",
+          pro: "Conversion optimization",
+          marcaWeb: "Performance + Technical SEO",
         },
-        revisions: {
-          label: "Revision Rounds",
-          start: "1",
-          pro: "2",
-          marcaWeb: "3",
+        strategicRefinement: {
+          label: "Strategic Refinement",
+          start: "Guided refinement",
+          pro: "Structured refinement",
+          marcaWeb: "Deep strategic refinement",
         },
       },
     },

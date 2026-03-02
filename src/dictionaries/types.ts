@@ -47,6 +47,7 @@ export type Dictionary = {
     forWhom: string;
     viewDemo: string;
     compareTitle: string;
+    mostPopular: string;
     cards: {
       start: {
         badge: string;
@@ -93,24 +94,49 @@ export type Dictionary = {
         marcaWeb: string;
       };
       rows: {
-        logo: { label: string; start: string; pro: string; marcaWeb: string };
-        design: { label: string; start: string; pro: string; marcaWeb: string };
-        pages: { label: string; start: string; pro: string; marcaWeb: string };
-        seo: { label: string; start: string; pro: string; marcaWeb: string };
-        analytics: {
+        businessStage: {
           label: string;
           start: string;
           pro: string;
           marcaWeb: string;
         };
-        copy: { label: string; start: string; pro: string; marcaWeb: string };
-        integrations: {
+        primaryGoal: {
           label: string;
           start: string;
           pro: string;
           marcaWeb: string;
         };
-        revisions: {
+        brandStrategy: {
+          label: string;
+          start: string;
+          pro: string;
+          marcaWeb: string;
+        };
+        websiteStrategy: {
+          label: string;
+          start: string;
+          pro: string;
+          marcaWeb: string;
+        };
+        googlePresence: {
+          label: string;
+          start: string;
+          pro: string;
+          marcaWeb: string;
+        };
+        growthInfrastructure: {
+          label: string;
+          start: string;
+          pro: string;
+          marcaWeb: string;
+        };
+        optimizationDepth: {
+          label: string;
+          start: string;
+          pro: string;
+          marcaWeb: string;
+        };
+        strategicRefinement: {
           label: string;
           start: string;
           pro: string;
