@@ -85,7 +85,7 @@ export const en: Dictionary = {
           "Entrepreneurs and businesses just starting out who need to exist online without complications.",
         diff: "Be online in less than a week",
         desc: "A minimal identity and a simple but professional website. The first step to being found.",
-        price: "From $160",
+        price: "From $160 – $190",
         delivery: "Estimated delivery: 5–7 business days",
         includes: [
           {
@@ -141,7 +141,7 @@ export const en: Dictionary = {
           },
         ],
         waText:
-          "Hello Web Lab, I'm interested in the Start Pack (from $160). I would like more info.",
+          "Hello Web Lab, I'm interested in the Start Pack (from $160 – $190). I would like more info.",
       },
       pro: {
         badge: "Pro Pack",
@@ -150,7 +150,7 @@ export const en: Dictionary = {
           "Established businesses that want to look good to attract more clients from Google.",
         diff: "Custom design + Google visibility",
         desc: "The right combination of professional design, basic SEO, and tools to generate inquiries from day one.",
-        price: "From $650",
+        price: "From $650 – $780",
         delivery: "Estimated delivery: 10–15 business days",
         includes: [
           {
@@ -196,7 +196,7 @@ export const en: Dictionary = {
         ],
         excludes: [],
         waText:
-          "Hello Web Lab, I'm interested in the Pro Pack (from $650). I would like more info.",
+          "Hello Web Lab, I'm interested in the Pro Pack (from $650 – $780). I would like more info.",
       },
       marcaWeb: {
         badge: "Brand + Web Pack",
@@ -205,7 +205,7 @@ export const en: Dictionary = {
           "Brands looking to scale that need a real strategy: more pages, more tools, more presence.",
         diff: "Complete strategy to scale your business",
         desc: "Not just a website. It's an entire digital presence system ready to grow: branding, strategic text, integrations, and technical SEO.",
-        price: "From $1,200",
+        price: "From $1,200 – $1,480",
         delivery: "Estimated delivery: 15–25 business days",
         includes: [
           {
@@ -250,7 +250,7 @@ export const en: Dictionary = {
         ],
         excludes: [],
         waText:
-          "Hello Web Lab, I'm interested in the Brand + Web Pack (from $1,200). I would like more info.",
+          "Hello Web Lab, I'm interested in the Brand + Web Pack (from $1,200 – $1,480). I would like more info.",
       },
     },
     compare: {
