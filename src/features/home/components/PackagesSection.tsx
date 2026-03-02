@@ -89,11 +89,13 @@ export const PackagesSection = ({ dict }: { dict: Dictionary }) => {
                   {pkg.includes.map((item) => (
                     <li key={item.text} className="flex gap-2">
                       <span className="text-brand-mint shrink-0 mt-0.5">✓</span>
-                      <span>{item.text}</span>
+                      <span className="flex-1">{item.text}</span>
                       {item.tooltip && (
-                        <Tooltip text={item.tooltip}>
-                          <Info className="w-4 h-4 text-brand-white/40 hover:text-brand-white/80 transition-colors mt-0.5 cursor-help" />
-                        </Tooltip>
+                        <div className="shrink-0">
+                          <Tooltip text={item.tooltip}>
+                            <Info className="w-4 h-4 text-brand-white/40 hover:text-brand-white/80 transition-colors mt-0.5 cursor-help" />
+                          </Tooltip>
+                        </div>
                       )}
                     </li>
                   ))}
@@ -111,11 +113,13 @@ export const PackagesSection = ({ dict }: { dict: Dictionary }) => {
                           className="flex gap-2 text-brand-white/35"
                         >
                           <span className="shrink-0">–</span>
-                          <span>{item.text}</span>
+                          <span className="flex-1">{item.text}</span>
                           {item.tooltip && (
-                            <Tooltip text={item.tooltip}>
-                              <Info className="w-4 h-4 text-brand-white/40 hover:text-brand-white/80 transition-colors cursor-help" />
-                            </Tooltip>
+                            <div className="shrink-0">
+                              <Tooltip text={item.tooltip}>
+                                <Info className="w-4 h-4 text-brand-white/40 hover:text-brand-white/80 transition-colors cursor-help" />
+                              </Tooltip>
+                            </div>
                           )}
                         </li>
                       ))}
